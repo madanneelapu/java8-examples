@@ -1,6 +1,6 @@
 out/
 .idea
-java8-examples.iml
+*.iml
 
 # Compiled class file
 *.class
