@@ -5,10 +5,14 @@ interface A{
     public default void methTwo(){
         System.out.println("Interface A - methTwo");
     }
+    public static void staticMeth(){
+        System.out.println("Interface A - staticMeth");
+    }
 }
 
 interface B extends A{
     public default void methTwo(){
+        A.super.methTwo();
         System.out.println("Interface B - methTwo");
     }
     public void methThree();
@@ -77,10 +81,10 @@ public class InterfaceDemo {
         a1 = new ClassTwo();
         a1.methTwo();*/
 
-        B b = new ClassThree();
+       /* B b = new ClassThree();
         b.methOne();
         b.methTwo();
-        b.methThree();
+        b.methThree();*/
 
        /* A a = new ClassFour();
         a.methOne();
@@ -89,6 +93,6 @@ public class InterfaceDemo {
         c.methFour();
         c.methTwo();*/
 
-
+        A.staticMeth();
     }
 }
