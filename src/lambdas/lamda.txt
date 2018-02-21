@@ -1,0 +1,19 @@
+String a = "java";
+
+int num = 10;
+
+public void methOne(){
+    System.out.println("Hello");
+}
+
+methOneLambda =  () -> {
+    System.out.println("Hello");
+};
+
+public boolean isEven(int a){
+    return a%2 == 0;
+}
+
+isEvenLambda =  (int a) -> a%2 == 0;
+
+isEvenLambda =  (int a) -> a%2 == 0;
