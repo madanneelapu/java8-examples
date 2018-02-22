@@ -5,7 +5,7 @@ interface Tester{
 }
 
 
-public class LambdaDemoThree {
+public class LambdaDemo3 {
     public static void main(String[] args) {
 
         Tester evenTester = a -> a%2 == 0;

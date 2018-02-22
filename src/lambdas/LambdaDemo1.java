@@ -13,7 +13,7 @@ class MyImplOne implements MyFunInterface{
     }
 }
 
-public class LambdaDemo {
+public class LambdaDemo1 {
 
     public static void main(String[] args) {
 

@@ -7,7 +7,7 @@ interface MyTester<T>{
 }
 
 
-public class LambdaDemoFour {
+public class LambdaDemo4 {
     public static void main(String[] args) {
 
         MyTester<Integer> evenTester = a -> a%2 == 0;
