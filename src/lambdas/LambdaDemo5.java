@@ -1,3 +1,4 @@
+//Accessibility of Static, instance, local variables in lambdas
 package lambdas;
 
 interface MyFunc{
