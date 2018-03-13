@@ -21,7 +21,7 @@ interface B extends A{
 interface C{
     public void methFour();
     public default void methTwo(){
-        System.out.println("Interface A - methTwo");
+        System.out.println("Interface C - methTwo");
     }
 }
 

@@ -13,7 +13,16 @@ public class LambdaComparator {
         nums.add(8);
         nums.add(50);
 
-        Collections.sort(nums, (a, b)-> a-b);
+
+        /*Collections.sort(nums, new Comparator<Integer>() {
+            @Override
+            public int compare(Integer o1, Integer o2) {
+                return o1-o2;
+            }
+        });*/
+        //Collections.sort(nums, (a, b)-> a-b);
+        Collections.sort(nums, Integer::compare);
+
         System.out.println(nums);
     }
 }
