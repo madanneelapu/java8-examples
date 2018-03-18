@@ -17,7 +17,7 @@ public class LambdaDemo5 {
             int v = num + n + LambdaDemo5.a + this.b;
             LambdaDemo5.a++; //can modify a static variable
             this.b++; //can modify an instance variable
-           // num++; //cannot modify a local variable
+            // num++; //cannot modify a local variable
             return v;
         };
 
