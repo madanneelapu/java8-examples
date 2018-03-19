@@ -1,0 +1,64 @@
+Java 8 brings in a new DateTime API.
+Issues with the existing Date/Time APIs: Thread Safety, API Design, Ease of understanding, Zoned Date Time.
+
+The new API features: Immutable-value classes, Domain-driven design, Separation of chronologies.
+The project has been led jointly by the author of Joda-Time (Stephen Colebourne) and Oracle, under JSR 310, and will appear in the new Java SE 8 package java.time.
+
+Common Date functions:-
+-----------------------
+LocalDate.now() -> Current Date
+LocalDate.of(2018, Month.FEBRUARY, 14) -> create custom date
+LocalDate.ofYearDay(2018, 123)  -> get date from day in year
+LocalDate.now().isAfter(anotherDate) -> compare dates
+LocalDate.now().getMonth().firstMonthOfQuarter()
+LocalDate.now().isLeapYear() 
+
+
+Common Time functions:-
+-----------------------
+LocalTime.now() -> current Time
+LocalTime.of(10, 30) -> create custom time
+LocalTime.ofSecondOfDay(85240); -> convert seconds to time
+
+
+Common DateTime functions:-
+---------------------------
+LocalDateTime.now()  -> current Date and Time
+LocalDateTime.of(2018, 10, 2, 12, 30) -> create custom Date and Time
+LocalTime.now(Clock.systemUTC()) -> Coordinated Universal Time
+
+
+Common Year functions:-
+-----------------------
+Year.now() -> current Year
+Year.of(1992).atDay(65) -> date of a day in a year
+
+
+Date Arithmetic function:-
+--------------------------
+LocalDate.now().plusDays(1) -> Add Days
+LocalDate.now().plusYears(1).plusMonths(6) -> Add Years and months
+LocalDateTime.now().minusHours(5).minusMinutes(30) -> subrtact hours and minutes
+
+
+Zoned Date and Time:-
+---------------------
+ZoneId.getAvailableZoneIds() -> set of all time zones
+LocalDateTime.now(ZoneId.of("America/Los_Angeles")) -> get local date and time in a timezone
+
+
+Period:-
+--------
+Period.between(dateOne, dateTwo) -> period between two dates
+Period.ofMonths(2).plusDays(15) -> create a custom period. We can add this to date.
+
+
+Formats:-
+---------
+LocalDateTime.now().format(DateTimeFormatter.ofPattern("dd-MM-yyyy HH:mm:ss"))
+Refer: https://docs.oracle.com/javase/8/docs/api/java/time/format/DateTimeFormatter.html
+
+
+Parsing:-
+---------
+LocalDate.parse("11-20-1989",DateTimeFormatter.ofPattern("MM-dd-yyyy"));
