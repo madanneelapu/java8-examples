@@ -1,1 +1,1 @@
-Java 8 Examples
+**This repository consists Java8 examples from my learning and practice.**
