@@ -2,7 +2,7 @@ Java 8 brings in a new DateTime API.
 Issues with the existing Date/Time APIs: Thread Safety, API Design, Ease of understanding, Zoned Date Time.
 
 The new API features: Immutable-value classes, Domain-driven design, Separation of chronologies.
-The project has been led jointly by the author of Joda-Time (Stephen Colebourne) and Oracle, under JSR 310, and will appear in the new Java SE 8 package java.time.
+The project has been led jointly by the author of Joda-Time (Stephen Colebourne) and Oracle, under JSR 310, and is available in the new Java SE 8 package java.time.
 
 Common Date functions:-
 -----------------------
