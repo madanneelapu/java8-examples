@@ -3,6 +3,7 @@ package streams;
 import com.sun.org.apache.xpath.internal.SourceTree;
 
 import java.util.Arrays;
+import java.util.Comparator;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
@@ -134,6 +135,22 @@ public class StreamsDemo6 {
                 );
 
         System.out.println(countByAge2);*/
+
+        //maxBy - Employee who is maxBy age
+       /* System.out.println(employees.stream()
+        .collect(Collectors.maxBy(Comparator.comparing(Employee::getAge))));*/
+
+        //minBy - Employee who is minBy age
+      /*  System.out.println(employees.stream()
+        .collect(Collectors.minBy(Comparator.comparing(Employee::getAge))));*/
+
+        //maxBy - Employee's name who is maxBy age
+        String result = employees.stream()
+                .collect(Collectors.collectingAndThen(
+                        Collectors.maxBy(Comparator.comparing(Employee::getAge)),
+                        employeeOptional -> employeeOptional.map(Employee::getFirstname).orElse("")
+                ));
+        System.out.println(result);
 
 
     }
