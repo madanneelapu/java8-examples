@@ -16,7 +16,10 @@ public class StreamsDemo4 {
                         .map(StreamsDemo4::doubleIt)
                         .findFirst() //terminal function triggers the execution of intermediate functions. - Lazy Evaluation.
                         //Until then, the function pipeline is built; but not used.
-                        //However, while executing; the whole pipeline is executed for each element.
+                        //You are more efficient, not when you work faster; but when you dont work at all.
+                        //However, while executing; the whole pipeline is executed for each element.                        
+            
+                        //Lazy Evaluation is possible only if the functions don't have side effects.
         );
 
     }
