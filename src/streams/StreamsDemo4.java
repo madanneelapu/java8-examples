@@ -14,7 +14,9 @@ public class StreamsDemo4 {
                 numbers.stream().filter(StreamsDemo4::isGT3)
                         .filter(StreamsDemo4::isEven)
                         .map(StreamsDemo4::doubleIt)
-                        .findFirst() //terminal function triggers the execution of intermediate functions.
+                        .findFirst() //terminal function triggers the execution of intermediate functions. - Lazy Evaluation.
+                        //Until then, the function pipeline is built; but not used.
+                        //However, while executing; the whole pipeline is executed for each element.
         );
 
     }
