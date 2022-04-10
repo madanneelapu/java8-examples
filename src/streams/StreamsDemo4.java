@@ -20,6 +20,8 @@ public class StreamsDemo4 {
                         //However, while executing; the whole pipeline is executed for each element.                        
             
                         //Lazy Evaluation is possible only if the functions don't have side effects.
+            
+                        //Any method that takes a stream and returns a stream is LAZY.
         );
 
     }
