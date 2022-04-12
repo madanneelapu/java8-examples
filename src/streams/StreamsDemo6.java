@@ -126,6 +126,9 @@ public class StreamsDemo6 {
                 );
 
         System.out.println(countByAge);*/
+        
+        // groupingBy and mapping are themselves Collectors which takes in (Funtion, Collector)
+        // collectingAndThen is itself a Collector which takes (Collector, Function)
 
         // collecting and then : count , just before adding to bucket... transform the data
         /*Map<Integer, Integer> countByAge2 = employees.stream()
